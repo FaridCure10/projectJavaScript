@@ -30,6 +30,7 @@ header{
     -ms-border-radius: 0 0 5px 5px;
     -o-border-radius: 0 0 5px 5px;
     animation: 5s rotate linear infinite;
+    -webkit-animation: 5s rotate linear infinite;
 }
 
 @keyframes rotate {
