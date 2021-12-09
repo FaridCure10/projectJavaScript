@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: #010507 url(./image-from-rawpixel-id-2417889-jpeg.jpg); /*Image by rawpixel.com */
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+
+  :root {
+    --marcas: #ff006a;
+    --esfera: #100153;
+  }
+
+  body {
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+  }
+
+  .container{
+    border:20px solid white;
+    border-radius: 50%;
+    margin: 50px auto;
+    position: relative;
+    padding: 2rem;
+    height:25vw;
+    width: 25vw;
+    transition: ease-in-out;
+    box-shadow:      0 0 10px 5px rgba(247, 0, 235, 0.5),      inset 0 0 0 3px #EFEFEF,      inset 0 0 10px black,      0 0 10px rgba(218, 0, 0, 0.377);
+    background: radial-gradient(var(--esfera) 55%, transparent 60%),     linear-gradient(to right, transparent 47%, var(--marcas) 47%, var(--marcas) 53%, transparent 52%) 0 -50px,     linear-gradient(transparent 48%, var(--marcas) 48%, var(--marcas) 52%, transparent 52%),     linear-gradient(30deg, transparent 49%, var(--marcas) 49%, var(--marcas) 51%, transparent 51%),     linear-gradient(60deg, transparent 49%, var(--marcas) 49%, var(--marcas) 51%, transparent 51%),     linear-gradient(120deg, transparent 49%, var(--marcas) 49%, var(--marcas) 51%, transparent 51%),     linear-gradient(150deg, transparent 49%, var(--marcas) 49%, var(--marcas) 51%, transparent 51%),     linear-gradient(90deg, var(--esfera) 48%, var(--marcas) 48%, var(--marcas) 52%, var(--esfera) 52%);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    -webkit-transition: ease-in-out;
+    -moz-transition: ease-in-out;
+    -ms-transition: ease-in-out;
+    -o-transition: ease-in-out;
+}
+
+  .hand{
+    width: 47%;
+    height: 0.6rem;
+    background: rgb(255, 254, 254);
+    position: relative;
+    top: 50%;
+    left: 3%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+    -webkit-transition: all 0.05s;
+    -moz-transition: all 0.05s;
+    -ms-transition: all 0.05s;
+    -o-transition: all 0.05s;
+}
+
+  .handHours,.handMins,.handSeconds{
+      position: absolute;
+  }
