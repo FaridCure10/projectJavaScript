@@ -64,3 +64,18 @@ html {
   .handHours,.handMins,.handSeconds{
       position: absolute;
   }
+
+
+  @media only screen and (max-width: 768px){
+    
+  .container{
+    border:12px solid white;
+}
+  }
+
+
+  @media only screen and (max-width: 460px){
+    .container{
+      border:4px solid white;
+  }
+  }
