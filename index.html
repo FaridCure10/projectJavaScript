@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects JS</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-        <h1>Projects</h1>
+
+    <header class="encabezado">
+        <h3>FC</h3>
+        <nav>
+            <ul>
+                <li><a href="#principal">Home</li></a>
+                <li><a href="#about">About me</li></a>
+                <li><a href="#projects">Projects</li></a>
+            </ul>
+        </nav>
     </header>
+    <div class="principal" id="principal">
+        <section class="presentacion">
+            <h2>FARID CURE</h2>
+            <h5>= DEVELOPER FULL STACK =</h5>
+        </section>
+    </div>
 
-    <div class="container">
-        <div class="project1"><a href="./Drum Kit/index.html"><button>Drum Kit</button></a></div>
-        <div class="project2"><a href="./Reloj/index.html"><button>Clock</button></a></div>
-        <div class="project3"><a href="./CSS Variables/index.html"><button>Variables CSS</button></a></div>
-
+    <div class="about" id="about">
+        <article>
+            <img src="/assets/perfil.jpg" alt="FC">
+        </article>
+        <section>
+            <h4>ABOUT ME</h4>
+                <p>Estudiante de Ingeniería Informática, tengo 30años, soy colombiano, 
+                    cuento con conocimientos en HTML, CSS, JavaScript y Sistema
+                    de control de versiones (GIT), llevo más de 1 año en desarrollo web.
+                    Actualmente me encuentro estudiando Certified Tech Developer (Full Stack)
+                    con la empresa Digital House de Argentina.</p>
+                    <div class="adhesivo"></div>
+        </section>
+    </div>
+    <div id="projects">
+        <header class="banner">
+            <h1>Projects</h1>
+        </header>
+        <div class="container">
+            <!-- <div class="project 1"><a href="./Drum Kit/index.html"><button>Drum Kit</button></a></div>
+            <div class="project 2"><a href="./Reloj/index.html"><button>Clock</button></a></div>
+            <div class="project 3"><a href="./CSS Variables/index.html"><button>Variables CSS</button></a></div> -->
+            <a href="./Drum Kit/index.html"><span>Drum Kit</span></a>
+            <a href="./Reloj/index.html"><span>Clock</span></a>
+            <a href="./CSS Variables/index.html"><span>Variables CSS</span></a>
+        </div>
     </div>
 </body>
+
 </html>
