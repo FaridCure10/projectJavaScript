@@ -1,0 +1,84 @@
+@use 'mixins';
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    padding: 4rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    &__about{
+        text-align: center;
+        .footer__title{
+            font-size: 2rem;
+            @include mixins.gradientText;
+            margin-bottom: 1rem;
+        }
+        .footer__name{
+            font-size: 1.5rem;
+        }
+        .footer__social{
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+        }
+    }
+    &__service{
+        text-align: center;
+        .footer__name{
+            font-size: 1.5rem;
+        }
+        .service__list{
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            .service__item{
+                margin-top: .8rem;
+                transition: 0.5s ease-in-out;
+                -webkit-transition: 0.5s ease-in-out;
+                -moz-transition: 0.5s ease-in-out;
+                -ms-transition: 0.5s ease-in-out;
+                -o-transition: 0.5s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    @include mixins.gradientText;
+                }
+            }
+        }
+    }
+    &__tags{
+        text-align: center;
+        .footer__name{
+            font-size: 1.5rem;
+        }
+        .tags__list{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .tags__item{
+            padding: 0.5rem;
+            width: max-content;
+            border: 1px solid var(--secundary-color);
+            &:hover{
+                color: #ffffff !important;
+                @include mixins.gradientText;
+            }
+        }
+
+    }
+    
+}
+
+.lower__footer{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 14rem;
+    background-color: var(--bacgroundColor)
+}

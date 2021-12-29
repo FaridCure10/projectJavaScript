@@ -1,0 +1,69 @@
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bacgroundColor);
+    
+    &__article{
+        background: linear-gradient(to right,#dd0080, #2f08d7);
+        height: 60vh;
+        margin: 15vh auto;
+        padding: 5px;
+        .about__article--gradient{
+            background: var(--bacgroundColor);
+            height: 100%;
+            .about__image{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                top: -1rem;
+                left: 1rem;
+                -webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	            animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            }
+            @-webkit-keyframes fade-in {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+              @keyframes fade-in {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+        }
+    }
+    &__section{
+        width: 50vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:flex-start;
+        color: #ffff;
+        .about__title{
+            font-size: 2rem;
+            position: relative;
+            bottom: 2rem;
+            border-bottom: solid 4px #dd0080;
+        }
+        .about__paragraph{
+            text-align: justify;
+            width: 70%;
+        }
+        .about__adhesivo{
+            position: relative;
+            bottom: 3.5rem;
+            left: 60%;
+            padding: 3rem;
+            border-right: 4px solid #2f08d7;
+            border-bottom: 4px solid #2f08d7;
+        }
+    }
+  }

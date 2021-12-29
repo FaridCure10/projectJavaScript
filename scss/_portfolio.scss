@@ -1,0 +1,54 @@
+@use 'mixins';
+
+.projects{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bacgroundColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .projects__banner{
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        .projects__title{
+            color: #fff;
+            font-size: 5rem;
+        }
+    }
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        color: #fff;
+        gap: 1rem;
+        width: 95%;
+        .card__item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba( 144, 19, 254, 0.25 );
+            box-shadow: 2px 8px 32px 0 rgba( 31, 38, 135, 0.3 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            &:hover{
+                .card__item--img{
+                filter: contrast(100%);
+                -webkit-filter: contrast(100%);
+                }            
+            }
+            &--img{
+                height: 250px;
+                width: 100%;
+                vertical-align: middle;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                filter: contrast(70%);
+                -webkit-filter: contrast(70%);
+            }
+            .card__item--button{
+               @include mixins.button;
+            }
+        }
+    }
+}

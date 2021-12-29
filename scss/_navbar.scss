@@ -1,0 +1,89 @@
+@use 'mixins';
+
+@font-face {
+    font-family: facb;
+    src: url("/assets/Alexana.ttf");
+}
+
+.scrollToTop{
+    position: fixed;
+    cursor: pointer;
+    bottom: 40px;
+    right: 40px;
+    background-color: #dd0080;
+    z-index: 10;
+    
+    padding: 1rem;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    i{
+        font-size: 2rem;
+    }
+    i:hover{
+        color: #2f08d7;
+    }
+}
+
+
+.header{
+    display: flex;
+    color: #ffff;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    margin-top: -4.3rem;
+    .header__brand{
+        display: flex;
+        .header__logo{
+            font-size: 1.2rem;
+            font-family: facb;
+            margin: .8rem;
+        }
+        .header__toggle{
+            display: none;
+        }
+    }
+    .header__nav{
+        .header__ul{
+            display: flex;
+            align-items: center;
+            margin: .8rem 0;
+            gap: 1rem;
+            margin-right: .8rem;
+            .header__li{
+                .header__li__a{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    color: inherit;
+                    text-decoration: none;
+                    &:hover{
+                        @include mixins.gradientText;
+                    }
+                }
+            }
+            .header__button{
+                color: #ffff;
+                font-size: 1rem;
+                font-weight: 400;
+                padding: .5rem;
+                text-transform: uppercase;
+                background-image: linear-gradient(
+                    rgba(0, 0, 0, 0.5),
+                    rgba(0, 0, 0, 0.5)),
+                    linear-gradient(to right, #dd0080, #2f08d7);
+                background-origin: border-box;
+                background-clip: content-box, border-box;
+                box-shadow: 2px 1000px 1px #000000 inset;
+                border: solid 4px transparent;
+                display: flex;
+                gap: .5rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

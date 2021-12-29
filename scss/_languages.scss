@@ -1,0 +1,25 @@
+.languages{
+    background-color: var(--bacgroundColor);
+    height: 30vh;
+    &__container{
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        .language{
+            img{
+                height: 7rem;
+                filter: brightness(0) invert(1);
+                -webkit-filter: brightness(0) invert(1);
+                transition: all 0.5 ease-in-out;
+                -webkit-transition: all 0.5 ease-in-out;
+                -moz-transition: all 0.5 ease-in-out;
+                -ms-transition: all 0.5 ease-in-out;
+                -o-transition: all 0.5 ease-in-out;
+                &:hover{
+                    filter: none;
+                    -webkit-filter: none;
+                }
+            }
+        }
+    }
+}

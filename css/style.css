@@ -90,9 +90,10 @@
   font-family: facb;
   src: url("/assets/Alexana.ttf");
 }
+
 .presentacion h2{
   font-size: 5rem;
-  font-family: facb;
+  font-family:'Rye', cursive;
 }
 h3{
   font-size: 1.2rem;

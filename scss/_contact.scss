@@ -1,0 +1,33 @@
+@use 'mixins';
+
+.contact{
+    background-color: var(--bacgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #ffffff;
+    border-top: 3px solid var(--secundary-color);
+    .contact__title{
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    .contact__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .contact__input{
+            background-color: transparent;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            padding: 0.8rem 10rem 0.9rem 1rem;
+            color: #ffffff;
+        }
+        .contact__button{
+            @include mixins.button;
+        }
+
+    }
+
+}

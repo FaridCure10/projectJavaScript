@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Variables-Colores
+:root{
+    --primary-color: #000000;
+    --secundary-color:#dd0080;
+    --other-color: #2f08d7;
+    --bacgroundColor: #0e1538;
+    --gradient: linear-gradient(to right, #dd0080, #2f08d7);
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+  
+body{
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+ul{
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    background-color: var(--primary-color);
+    width: .4rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--other-color);
+}

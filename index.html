@@ -5,58 +5,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects JS</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Farid Cure</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
-
-    <header class="encabezado">
-        <h3>FC</h3>
-        <nav>
-            <ul>
-                <li><a href="#principal">Home</li></a>
-                <li><a href="#about">About me</li></a>
-                <li><a href="#projects">Projects</li></a>
+    <div class="scrollToTop">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <header class="header">
+        <div class="header__brand">
+            <h3 class="header__logo">FC</h3>
+            <div class="header__toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class="header__li__a" href="#principal">Home</li></a>
+                <li class="header__li"><a class="header__li__a" href="#about">About me</li></a>
+                <li class="header__li"><a class="header__li__a" href="#projects">Projects</li></a>
+                <button class="header__button"><i class="far fa-id-card"></i>Contact Us</button>
             </ul>
         </nav>
     </header>
     <div class="principal" id="principal">
-        <section class="presentacion">
-            <h2>FARID CURE</h2>
-            <h5>= DEVELOPER FULL STACK =</h5>
+        <section class="principal__presentation">
+            <h2 class="principal__name">FARID CURE</h2>
+            <h5 class="principal__study">= DEVELOPER FULL STACK =</h5>
         </section>
     </div>
 
     <div class="about" id="about">
-        <article>
-            <img src="/assets/perfil.jpg" alt="FC">
+        <article class="about__article">
+            <article class="about__article--gradient">
+                <img class="about__image" src="./assets/perfil.jpg" alt="FC">
+            </article>
         </article>
-        <section>
-            <h4>ABOUT ME</h4>
-                <p>Estudiante de Ingeniería Informática, tengo 30años, soy colombiano, 
+        <section class="about__section">
+            <h4 class="about__title">ABOUT ME</h4>
+                <p class="about__paragraph">Estudiante de Ingeniería Informática, tengo 30años, soy colombiano, 
                     cuento con conocimientos en HTML, CSS, JavaScript y Sistema
                     de control de versiones (GIT), llevo más de 1 año en desarrollo web.
                     Actualmente me encuentro estudiando Certified Tech Developer (Full Stack)
                     con la empresa Digital House de Argentina.</p>
-                    <div class="adhesivo"></div>
+                    <div class="about__adhesivo"></div>
         </section>
     </div>
-    <div id="projects">
-        <header class="banner">
-            <h1>Projects</h1>
+    <div id="projects" class="projects">
+        <header class="projects__banner">
+            <h1 class="projects__title">Projects</h1>
         </header>
-        <div class="container">
-            <!-- <div class="project 1"><a href="./Drum Kit/index.html"><button>Drum Kit</button></a></div>
-            <div class="project 2"><a href="./Reloj/index.html"><button>Clock</button></a></div>
-            <div class="project 3"><a href="./CSS Variables/index.html"><button>Variables CSS</button></a></div> -->
-            <a href="./Drum Kit/index.html"><span>Drum Kit</span></a>
-            <a href="./Reloj/index.html"><span>Clock</span></a>
-            <a href="./CSS Variables/index.html"><span>Variables CSS</span></a>
+        <div class="projects__cards">
+            <div class="card__item">
+                <img class="card__item--img" src="./assets/drum-kit-img.png" alt="drum-kit">
+                <button class="card__item--button"><a href="./Drum Kit/index.html">Drum Kit</a></button>
+            </div>
+            <div class="card__item">
+                <img class="card__item--img" src="./assets/Clock-img.png" alt="drum-kit">
+                <button class="card__item--button"><a href="./Reloj/index.html">Clock</a></button>
+            </div>
+            <div class="card__item">
+                <img class="card__item--img" src="./assets/Var-css-img.png" alt="drum-kit">
+                <button class="card__item--button"><a href="./CSS Variables/index.html">Variables Css</a> </button>
+            </div>
         </div>
     </div>
+    <div class="languages" id="languages">
+        <div class="languages__container">
+            <div class="language">
+                <img src="./assets/languages1.png" alt="">
+            </div>
+            <div class="language">
+                <img src="./assets/languages2.png" alt="">
+            </div>
+            <div class="language">
+                <img src="./assets/languages3.png" alt="">
+            </div>
+            <div class="language">
+                <img src="./assets/languages4.png" alt="">
+            </div>
+            <div class="language">
+                <img src="./assets/languages5.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h3 class="contact__title">Contact me</h3>
+        <div class="contact__form">
+            <input class="contact__input" type="text" placeholder="Name">
+            <input class="contact__input" type="email" placeholder="Email">
+            <input class="contact__input" type="tel" placeholder="Number">
+            <button class="contact__button">Contact Me</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__about">
+            <h2 class="footer__title">Portfolio</h2>
+            <h3 class="footer__name">Farid Cure</h3>
+            <ul class="footer__social">
+                <li class="social__item"><i class="fab fa-facebook-f"></i></li>
+                <li class="social__item"><i class="fab fa-instagram"></i></li>
+                <li class="social__item"><i class="fab fa-linkedin-in"></i></li>
+            </ul>
+        </div>
+        <div class="footer__service">
+            <h3 class="footer__name">Our Services</h3>
+            <ul class="service__list">
+                <li class="service__item">Website Development</li>
+                <li class="service__item">Building Applications</li>
+                <li class="service__item">SEO & Digital Marketing</li>
+            </ul>
+        </div>
+        <div class="footer__tags">
+            <h3 class="footer__name">Popular Tags</h3>
+            <ul class="tags__list">
+                <li class="tags__item">Mobile</li>
+                <li class="tags__item">Web</li>
+                <li class="tags__item">Development</li>
+                <li class="tags__item">Apps</li>
+                <li class="tags__item">Technology</li>
+                <li class="tags__item">Education</li>
+                <li class="tags__item">Marketing</li>
+                <li class="tags__item">Portfolio</li>
+                <li class="tags__item">Languages</li>
+            </ul>
+        </div>
+    </footer>
+    <div class="lower__footer">
+        <span class="lower__footer--1">With ❤️ for you.</span>
+        <span class="lower__footer--2">© 2021 all rights reserved - Farid Cure</span>
+    </div>
+    <script src="./script/script.js"></script>
+    <script src="./script/animation.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,128 @@
+@use 'mixins';
+
+@media screen and (max-width:480px)  {
+    body{
+        overflow-x: hidden;
+    }
+
+    .header{
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5px );
+        -webkit-backdrop-filter: blur( 5px );
+        .header__brand{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 2rem;
+            width: 100%;   
+        }
+        .header__nav{
+            display:  none;
+        }
+    }
+
+    body .header .header__brand .header__toggle{
+        display: block;
+        font-size: 1.2rem;
+    }    
+
+    .principal{
+        margin: 0;
+        height: 100%;
+        .principal__presentation{
+            text-align: center;
+            background: transparent;
+            backdrop-filter: none;
+            box-shadow: none;
+            width: 100%;
+            color: #ffffff;
+            .principal__name{
+                font-size: 3rem;
+                position: relative;
+                top: calc(40%);
+            }
+            .principal__study{
+                position: relative;
+                top: calc(40%);
+            }
+        }
+    }
+
+    .about{
+        flex-direction: column;
+        .about__article{
+            width: 80%;
+            margin: 10vh;
+        }
+        .about__section{
+            width: 100%;
+            height: auto;
+            align-items: center;
+            justify-content: space-around;
+            .about__title{
+                border-bottom: solid 2px #dd0080;
+            }
+            .about__paragraph{
+                width: 90%;
+            }
+            .about__adhesivo{
+                position: relative;
+                bottom: 5rem;
+                left: 1px;
+                padding: 3rem;
+                border-right: none;
+                border-bottom: 4px solid #2f08d7;
+            }
+        }
+    }
+
+    .projects{
+        width: 100% !important;
+        height: auto !important;
+        .projects__cards{
+            grid-template-columns: none;
+            .card__item{
+                .card__item--img{
+                    height: 180px;
+                }
+            }
+        }
+    }
+
+    .languages{
+        height: auto !important;
+        padding: 100px 0 20px 0;
+        .languages__container{
+            flex-wrap: wrap;
+        }
+    }
+
+    .footer{
+        grid-template-columns: none !important;
+        padding: 0 !important;
+        margin: 70px 0 70px 0;
+        gap: 30px 0;
+        .footer__service{
+            .footer__name{
+                @include mixins.gradientText;
+            }
+            .service__list{
+                margin-top: 0;
+            }
+        }
+        .footer__tags{
+            .footer__name{
+                @include mixins.gradientText;
+            }
+        }
+    }
+
+    .lower__footer{
+        padding: 0 !important;
+        text-align: center;
+        &--1{
+            display: none;
+        }
+    }
+}
