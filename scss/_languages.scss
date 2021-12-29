@@ -1,9 +1,11 @@
 .languages{
     background-color: var(--bacgroundColor);
-    height: 30vh;
+    height: auto;
+    padding-bottom: 30px;
     &__container{
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 4rem;
         .language{
             img{

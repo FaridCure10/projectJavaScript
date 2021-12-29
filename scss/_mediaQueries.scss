@@ -1,5 +1,77 @@
 @use 'mixins';
 
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .about{
+        flex-direction: column;
+        .about__section{
+            width: 100%;
+            height: auto;
+            align-items: center;
+            .about__adhesivo{
+                position: relative;
+                bottom: 5rem;
+                left: 1px;
+                padding: 3rem;
+                border-right: none;
+                border-bottom: 4px solid #2f08d7;
+            }
+        }
+    }
+
+    .projects{
+        width: 100% !important;
+        height: auto !important;
+        .projects__cards{
+            grid-template-columns: none;
+            width: 80%;
+            .card__item{
+                .card__item--img{
+                    max-height: 220px;
+                }
+            }
+        }
+    }
+
+    .languages{
+        height: auto !important;
+        padding: 100px 0 30px 0;
+    }
+
+    .footer{
+        grid-template-columns: none !important;
+        padding: 0 !important;
+        margin: 70px 0 70px 0;
+        gap: 30px 0;
+        .footer__service{
+            .footer__name{
+                @include mixins.gradientText;
+            }
+            .service__list{
+                margin-top: 0;
+            }
+        }
+        .footer__tags{
+            .footer__name{
+                @include mixins.gradientText;
+            }
+        }
+    }
+
+    .lower__footer{
+        padding: 0 !important;
+        align-items: center;
+        text-align: center;
+        height: 25px;
+        // &--1{
+        //     display: none;
+        // }
+    }
+}
+
 @media screen and (max-width:480px)  {
     body{
         overflow-x: hidden;
@@ -93,9 +165,6 @@
     .languages{
         height: auto !important;
         padding: 100px 0 20px 0;
-        .languages__container{
-            flex-wrap: wrap;
-        }
     }
 
     .footer{
@@ -120,7 +189,9 @@
 
     .lower__footer{
         padding: 0 !important;
+        align-items: center;
         text-align: center;
+        height: 25px;
         &--1{
             display: none;
         }

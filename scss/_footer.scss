@@ -79,6 +79,7 @@
     color: #ffffff;
     display: flex;
     justify-content: space-around;
-    padding: 1rem 14rem;
+    padding: 0 calc(50% - 30%);
+    
     background-color: var(--bacgroundColor)
 }

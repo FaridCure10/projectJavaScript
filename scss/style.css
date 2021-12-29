@@ -1,3 +1,69 @@
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about .about__section {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .about .about__section .about__adhesivo {
+    position: relative;
+    bottom: 5rem;
+    left: 1px;
+    padding: 3rem;
+    border-right: none;
+    border-bottom: 4px solid #2f08d7;
+  }
+
+  .projects {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .projects .projects__cards {
+    grid-template-columns: none;
+    width: 80%;
+  }
+  .projects .projects__cards .card__item .card__item--img {
+    max-height: 220px;
+  }
+
+  .languages {
+    height: auto !important;
+    padding: 100px 0 30px 0;
+  }
+
+  .footer {
+    grid-template-columns: none !important;
+    padding: 0 !important;
+    margin: 70px 0 70px 0;
+    gap: 30px 0;
+  }
+  .footer .footer__service .footer__name {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .footer .footer__service .service__list {
+    margin-top: 0;
+  }
+  .footer .footer__tags .footer__name {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .lower__footer {
+    padding: 0 !important;
+    align-items: center;
+    text-align: center;
+    height: 25px;
+  }
+}
 @media screen and (max-width: 480px) {
   body {
     overflow-x: hidden;
@@ -90,9 +156,6 @@
     height: auto !important;
     padding: 100px 0 20px 0;
   }
-  .languages .languages__container {
-    flex-wrap: wrap;
-  }
 
   .footer {
     grid-template-columns: none !important;
@@ -116,7 +179,9 @@
 
   .lower__footer {
     padding: 0 !important;
+    align-items: center;
     text-align: center;
+    height: 25px;
   }
   .lower__footer--1 {
     display: none;
@@ -124,7 +189,7 @@
 }
 @font-face {
   font-family: facb;
-  src: url("/assets/Alexana.ttf");
+  src: url("../assets/Alexana.ttf");
 }
 .scrollToTop {
   position: fixed;
@@ -345,10 +410,11 @@
 .about__section {
   width: 50vw;
   height: 80vh;
+  margin: 15vh auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: #ffff;
 }
 .about__section .about__title {
@@ -364,7 +430,7 @@
 .about__section .about__adhesivo {
   position: relative;
   bottom: 3.5rem;
-  left: 60%;
+  left: 35%;
   padding: 3rem;
   border-right: 4px solid #2f08d7;
   border-bottom: 4px solid #2f08d7;
@@ -452,17 +518,19 @@
   color: #ffffff;
   display: flex;
   justify-content: space-around;
-  padding: 1rem 14rem;
+  padding: 0 20%;
   background-color: var(--bacgroundColor);
 }
 
 .languages {
   background-color: var(--bacgroundColor);
-  height: 30vh;
+  height: auto;
+  padding-bottom: 30px;
 }
 .languages__container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 4rem;
 }
 .languages__container .language img {
@@ -542,6 +610,7 @@ ul {
 }
 .principal__presentation .principal__name {
   font-size: 5rem;
+  text-align: center;
 }
 
 .contact {
