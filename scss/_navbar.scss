@@ -34,10 +34,10 @@
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    z-index: 100;
+    z-index: 50;
     top: 0;
     margin-top: -4.3rem;
-    .header__brand{
+    &__brand{
         display: flex;
         .header__logo{
             font-size: 1.2rem;
@@ -48,7 +48,7 @@
             display: none;
         }
     }
-    .header__nav{
+    &__nav{
         .header__ul{
             display: flex;
             align-items: center;

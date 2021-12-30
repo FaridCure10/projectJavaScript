@@ -87,16 +87,42 @@
             justify-content: space-around;
             align-items: center;
             gap: 2rem;
-            width: 100%;   
+            width: 100%;
+            .header__toggle{
+                display: block;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
         }
         .header__nav{
-            display:  none;
+            .header__ul{
+                display: none;
+            }
         }
-    }
-
-    body .header .header__brand .header__toggle{
-        display: block;
-        font-size: 1.2rem;
+        .header__nav.responsive{
+            position: absolute;
+            top: 48px;
+            right: 0;
+            width: 120px;
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 5px );
+            -webkit-backdrop-filter: blur( 5px );
+            .header__ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .header__li{
+                    .header__li__a{
+                        float: none;
+                        display: block;
+                    }
+                }
+                .header__button{
+                    display: none;
+                }
+            }
+        }
     }    
 
     .principal{

@@ -82,13 +82,35 @@
     gap: 2rem;
     width: 100%;
   }
-  .header .header__nav {
-    display: none;
-  }
-
-  body .header .header__brand .header__toggle {
+  .header .header__brand .header__toggle {
     display: block;
     font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .header .header__nav .header__ul {
+    display: none;
+  }
+  .header .header__nav.responsive {
+    position: absolute;
+    top: 48px;
+    right: 0;
+    width: 120px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+  .header .header__nav.responsive .header__ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .header .header__nav.responsive .header__ul .header__li .header__li__a {
+    float: none;
+    display: block;
+  }
+  .header .header__nav.responsive .header__ul .header__button {
+    display: none;
   }
 
   .principal {
@@ -218,40 +240,40 @@
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  z-index: 100;
+  z-index: 50;
   top: 0;
   margin-top: -4.3rem;
 }
-.header .header__brand {
+.header__brand {
   display: flex;
 }
-.header .header__brand .header__logo {
+.header__brand .header__logo {
   font-size: 1.2rem;
   font-family: facb;
   margin: 0.8rem;
 }
-.header .header__brand .header__toggle {
+.header__brand .header__toggle {
   display: none;
 }
-.header .header__nav .header__ul {
+.header__nav .header__ul {
   display: flex;
   align-items: center;
   margin: 0.8rem 0;
   gap: 1rem;
   margin-right: 0.8rem;
 }
-.header .header__nav .header__ul .header__li .header__li__a {
+.header__nav .header__ul .header__li .header__li__a {
   font-size: 1.2rem;
   font-weight: 600;
   color: inherit;
   text-decoration: none;
 }
-.header .header__nav .header__ul .header__li .header__li__a:hover {
+.header__nav .header__ul .header__li .header__li__a:hover {
   background: var(--gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.header .header__nav .header__ul .header__button {
+.header__nav .header__ul .header__button {
   color: #ffff;
   font-size: 1rem;
   font-weight: 400;
