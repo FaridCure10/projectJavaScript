@@ -1,8 +1,6 @@
 @use 'mixins';
 
 .projects{
-    width: 100vw;
-    height: 100vh;
     background-color: var(--bacgroundColor);
     display: flex;
     flex-direction: column;

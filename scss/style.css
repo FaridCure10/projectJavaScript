@@ -290,8 +290,6 @@
 }
 
 .projects {
-  width: 100vw;
-  height: 100vh;
   background-color: var(--bacgroundColor);
   display: flex;
   flex-direction: column;
@@ -547,7 +545,7 @@
 .languages {
   background-color: var(--bacgroundColor);
   height: auto;
-  padding-bottom: 30px;
+  padding: 5rem;
 }
 .languages__container {
   display: flex;

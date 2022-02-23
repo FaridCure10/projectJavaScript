@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --shadow-color: 283deg 3% 48%;
+    --shadow-elevation-medium:
+    0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
+    0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
+    2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
+    5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
+}
+
+header{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+}
+
+.header_ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.header_li{
+    margin-right: 0.85rem;
+    font-size: 1.2rem;
+}
+
+.header_li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.header_li a:hover{
+    color: red;
+}
+
+.fa-shopping-cart{
+    color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+.slide{
+    background-image: url("/TiendaGamer/img/BannerEscritorio.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.slide_title{
+    font-size: 4rem;
+}
+
+.slide_title-span{
+    color: red;
+}
+
+.slide_shopping{
+    cursor: pointer;
+    background: rgb(255,2,2);
+    background: linear-gradient(90deg, rgba(255,2,2,1) 9%, rgba(121,9,9,1) 48%, rgba(255,0,0,1) 97%);
+    border-radius: .5rem;
+    border: none;
+    color: white;
+    width: 9rem;
+    height: 3rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+
+.products{
+    text-align: center;
+    align-self: center;
+    color: silver;
+}
+
+.products_title{
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    color: black;
+}
+
+.products_cards{
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+}
+
+.card_item{
+    cursor: pointer;
+    align-self: center;
+    background-color: white;
+    width: 90%;
+    margin: 2rem 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-elevation-medium);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.card_item-img{
+    margin: 20px;
+    width: 40%;
+}
+
+.card_item-hr{
+    background-color: silver;
+}
+
+.card_item-precio{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+.card_item-cuotas{
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card_item-envio{
+    color: #619D00;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.banner_container{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner_item{
+    width: 50%;
+}
+
+.banner_item-img{
+    cursor: pointer;
+    width: 80%;
+    box-shadow: var(--shadow-elevation-medium);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.banner_item-p{
+    position: relative;
+    bottom: 50%;
+    left: 100px;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+}
+
+.footer{
+    background: #222222;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+    height: 150px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer_redes-p{
+    margin-bottom: .5rem;
+}
+
+.fab{
+    margin: 0 1rem;
+}
+
+.fa-facebook-f{
+    color: #1476D0;
+}
+
+.fa-twitter{
+    color: #14AED0;
+}
+
+.fa-instagram{
+    color: #CE0CFF;
+}
+
+.lower_footer{
+    background-color: #C4C4C4;
+    height: 25px;
+    text-align: center;
+    padding: 2px;
+}
