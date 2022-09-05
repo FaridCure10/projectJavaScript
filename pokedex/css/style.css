@@ -8,7 +8,10 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
 }
 
 h1{
@@ -27,6 +30,8 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 input{
@@ -56,32 +61,111 @@ button{
 }
 
 .card{
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 390px;
 }
 
 div.card .tarjeta{
-    width: 30%;
-    padding: 2rem;
-    margin-top: 1rem;
-    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    height: 130px;
+    padding: 10px;
     border: 2px solid black;
     background:linear-gradient(#0e11d4, #0b8f84, #d81587);
-
 }
 
 h6{
-    font-size: 2rem;
+    width: 100%;
+    height: 15px;
+    font-size: 12px;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
 }
 
 img{
-    margin-top: 1rem;
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    max-width: 100px;
+    height: fit-content;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.content_btn{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.btnHome{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    width: 85px;
+    height: 30px;
+    padding: 5px 8px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87CEEB), color-stop(100%,#4682B4));
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+    font: 600 15px Helvetica, Sans-Serif;
+}
+
+.content_btn a,
+.content_btn p{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 85px;
+    height: 30px;
+    padding: 5px 8px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#87CEEB), color-stop(100%,#4682B4));
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #62C2F9;
+    border-radius: 10px;
+    font: 600 15px Helvetica, Sans-Serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .card{
+        max-width: 800px;
+    }
+    
+    div.card .tarjeta{
+        width: 30%;
+        height: 220px;
+    }
+    
+    h6{
+        height: 30px;
+        font-size: 25px;
+    }
+
+    img{
+        max-width: 160px;
+        max-height: 160px;
+    }
 }

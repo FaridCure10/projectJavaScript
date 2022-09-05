@@ -13,13 +13,26 @@ let tom= new Audio('./sounds/tom.wav');
 const keys=Array.from(document.querySelectorAll('.drum-key'));
 keys.forEach(key => key.addEventListener('transitionend',removeTransition));
 window.addEventListener('keydown',playSound);
+keys.forEach(key => {
+    key.addEventListener('click',playSound)
+})
 
 function playSound(e){
-    const keyValue = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    let valorF = '';
     if(!keys) return;
 
-    keyValue.classList.add('bright');
-    switch (e.keyCode) {
+    if(e.type == 'keydown'){
+        const keyValue = document.querySelector(`div[data-key="${e.keyCode}"]`);
+        keyValue.classList.add('bright');
+        valorF = e.keyCode;
+    }else if(e.type == 'click'){
+        let $this = this;
+        let clicKey = $this.getAttribute('data-key');
+        const keyValue = document.querySelector(`div[data-key="${clicKey}"]`);
+        keyValue.classList.add('bright');
+        valorF = clicKey;
+    }
+    switch (parseInt(valorF)) {
         case 65:
             clap.currentTime=0;
             clap.play();

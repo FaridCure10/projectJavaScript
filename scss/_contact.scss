@@ -6,7 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: fit-content;
+    padding: 20px 0px;
     color: #ffffff;
     border-top: 3px solid var(--secundary-color);
     .contact__title{

@@ -1,13 +1,16 @@
 .about{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: var(--bacgroundColor);
+    padding: 30px 10px;
+    gap: 30px;
     
     &__article{
         background: linear-gradient(to right,#dd0080, #2f08d7);
         height: 60vh;
-        margin: 15vh auto;
+        max-height: 400px;
+        margin: 20 auto;
         padding: 5px;
         .about__article--gradient{
             background: var(--bacgroundColor);
@@ -41,8 +44,10 @@
     }
     &__section{
         width: 50vw;
+        max-width: 800px;
         height: 80vh;
-        margin: 15vh auto;
+        max-height: 400px;
+        margin: 20px;
         display: flex;
         flex-direction: column;
         justify-content:center;

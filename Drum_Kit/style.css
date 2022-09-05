@@ -14,11 +14,17 @@ html {
 body{
     /* overflow: hidden; */
     font-family: sans-serif, Verdana, Geneva, Tahoma;
+    position: relative;
 }
 
 .container{
     display: flex;
+    flex-wrap: wrap;
     flex: 1;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 60px;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -66,4 +72,31 @@ span{
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: #ffc600;
+}
+
+.btnHome{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 85px;
+    height: 30px;
+    padding: 5px 8px;
+    background-color: #ffc600;
+    box-shadow: inset 0px 0px 6px #fff;
+    -webkit-box-shadow: inset 0px 0px 6px #fff;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    font: 600 15px Helvetica, Sans-Serif;
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        padding-top: inherit;
+    }
 }
