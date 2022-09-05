@@ -81,7 +81,7 @@ header{
 }
 
 .slide{
-    background-image: url("/TiendaGamer/img/BannerEscritorio.jpg");
+    background-image: url('../img/BannerEscritorio.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
